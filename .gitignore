@@ -1,0 +1,7 @@
+sass-cache
+_inc
+codekit-config.json
+.DS_Store
+*.kit
+skeleton-ui.sublime-project
+skeleton-ui.sublime-workspace
