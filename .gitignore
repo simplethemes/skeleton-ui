@@ -5,3 +5,4 @@ codekit-config.json
 *.kit
 skeleton-ui.sublime-project
 skeleton-ui.sublime-workspace
+*.scssc

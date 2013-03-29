@@ -1,0 +1,245 @@
+$gutter: 20px;
+$columns: 16;
+
+@mixin generate_layout($width: 960px, $offset: true, $onecol: false) {
+  $column_width: $width / $columns;
+  .container {
+    position: relative;
+    width: $width;
+    margin: 0 auto;
+    padding: 0;
+  }
+  @if $onecol == true {
+    @include mobile_columns($width);
+  }
+  @else {
+    @include columns($column_width, $gutter, $width);
+  }
+  .column,.columns {
+    float: left;
+    display: inline;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+    &.alpha {
+      margin-left: 0;
+    }
+    &.omega {
+      margin-right: 0;
+    }
+  }
+
+  @if $offset == true {
+    @if $onecol == true {
+      @include mobile_offset;
+    }
+    @else {
+      @include offset($column_width, $width);
+    }
+  }
+}
+
+@mixin columns($column_width, $gutter, $width) {
+  $one_third_column: $width / 3;
+  .span1,
+  .one.column,
+  .one.columns {
+    width: $column_width * 1 - $gutter;
+  }
+  .span2,.two.columns {
+    width: $column_width * 2 - $gutter;
+  }
+  .span3,.three.columns {
+    width: $column_width * 3 - $gutter;
+  }
+  .span4,.four.columns {
+    width: $column_width * 4 - $gutter;
+  }
+  .span5,.five.columns {
+    width: $column_width * 5 - $gutter;
+  }
+  .span6,.six.columns {
+    width: $column_width * 6 - $gutter;
+  }
+  .span7,.seven.columns {
+    width: $column_width * 7 - $gutter;
+  }
+  .span8,.eight.columns {
+    width: $column_width * 8 - $gutter;
+  }
+  .span9,.nine.columns {
+    width: $column_width * 9 - $gutter;
+  }
+  .span10,.ten.columns {
+    width: $column_width * 10 - $gutter;
+  }
+  .span11,.eleven.columns {
+    width: $column_width * 11 - $gutter;
+  }
+  .span12,.twelve.columns {
+    width: $column_width * 12 - $gutter;
+  }
+  .span13,.thirteen.columns {
+    width: $column_width * 13 - $gutter;
+  }
+  .span14,.fourteen.columns {
+    width: $column_width * 14 - $gutter;
+  }
+  .span15,.fifteen.columns {
+    width: $column_width * 15 - $gutter;
+  }
+  .span16,.sixteen.columns {
+    width: $column_width * 16 - $gutter;
+  }
+  .one-third.column {
+    width: $one_third_column - $gutter;
+  }
+  .two-thirds.column {
+    width: $width - $one_third_column - $gutter;
+  }
+  .one-third.column.alpha,
+  .one-third.column.omega {
+    width: $one_third_column - $gutter / 2;
+  }
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: $width - $one_third_column - $gutter / 2;
+  }
+
+}
+
+@mixin offset($column_width, $width) {
+  .offset-by-half {
+    padding-left: ($width - $column_width * 15) / 2;
+  }
+  .offset1,.offset-by-one {
+    padding-left: $width - $column_width * 15;
+  }
+  .offset2,.offset-by-two {
+    padding-left: $width - $column_width * 14;
+  }
+  .offset3,.offset-by-three {
+    padding-left: $width - $column_width * 13;
+  }
+  .offset4,.offset-by-four {
+    padding-left: $width - $column_width * 12;
+  }
+  .offset5,.offset-by-five {
+    padding-left: $width - $column_width * 11;
+  }
+  .offset6,.offset-by-six {
+    padding-left: $width - $column_width * 10;
+  }
+  .offset7,.offset-by-seven {
+    padding-left: $width - $column_width * 9;
+  }
+  .offset8,.offset-by-eight {
+    padding-left: $width - $column_width * 8;
+  }
+  .offset9,.offset-by-nine {
+    padding-left: $width - $column_width * 7;
+  }
+  .offset10,.offset-by-ten {
+    padding-left: $width - $column_width * 6;
+  }
+  .offset11,.offset-by-eleven {
+    padding-left: $width - $column_width * 5;
+  }
+  .offset12,.offset-by-twelve {
+    padding-left: $width - $column_width * 4;
+  }
+  .offset13,.offset-by-thirteen {
+    padding-left: $width - $column_width * 3;
+  }
+  .offset14,.offset-by-fourteen {
+    padding-left: $width - $column_width * 2;
+  }
+  .offset15,.offset-by-fifteen {
+    padding-left: $width - $column_width * 1;
+  }
+}
+
+@mixin mobile_columns($width) {
+  .one.column,
+  .one.columns,.span1,
+  .two.columns,.span2,
+  .three.columns,.span3,
+  .four.columns,.span4,
+  .five.columns,.span5,
+  .six.columns,.span6,
+  .seven.columns,.span7,
+  .eight.columns,.span8,
+  .nine.columns,.span9,
+  .ten.columns,.span10,
+  .eleven.columns,.span11,
+  .twelve.columns,.span12,
+  .thirteen.columns,.span13,
+  .fourteen.columns,.span14,
+  .fifteen.columns,.span15,
+  .sixteen.columns,.span16,
+  .one-third.column,
+  .two-thirds.column,
+  .col,
+  .one-third.column.alpha,
+  .one-third.column.omega,
+  .two-thirds.column.alpha,
+  .two-thirds.column.omega {
+    width: $width - $gutter;
+  }
+  .one_half,
+  .one_third,
+  .two_thirds,
+  .three_fourths,
+  .one_fourth,
+  .one_fifth,
+  .two_fifth,
+  .three_fifth,
+  .four_fifth,
+  .one_sixth,
+  .five_sixth {width: 100% !important;}
+}
+
+@mixin mobile_offset {
+  .container .offset-by-one,.container .offset1,
+  .container .offset-by-two,.container .offset2,
+  .container .offset-by-three,.container .offset3,
+  .container .offset-by-four,.container .offset4,
+  .container .offset-by-five,.container .offset5,
+  .container .offset-by-six,.container .offset6,
+  .container .offset-by-seven,.container .offset7,
+  .container .offset-by-eight,.container .offset8,
+  .container .offset-by-nine,.container .offset9,
+  .container .offset-by-ten,.container .offset10,
+  .container .offset-by-eleven,.container .offset11,
+  .container .offset-by-twelve,.container .offset12,
+  .container .offset-by-thirteen,.container .offset13,
+  .container .offset-by-fourteen,.container .offset14,
+  .container .offset-by-fifteen,.container .offset15 {
+    padding-left: 0;
+  }
+}
+
+// End Grids
+
+// Use REM in modern browsers and fallback to pixels for IE8-
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+//
+// $sizeValue - The desired font-size in pixels.
+//
+// Compatible in IE6+.
+@mixin font-size( $sizeValue: 1.6 ) {
+  font-size: ($sizeValue * 1) + px;
+  font-size: ($sizeValue / 10 * 0.625) + rem;
+}
+
+
+// Use REM in modern browsers and fallback to pixels for IE8-
+// http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
+//
+// $sizeValue - The desired font-size in pixels.
+//
+// Compatible in IE6+.
+@mixin line-height( $sizeValue: 1.6 ) {
+  line-height: ($sizeValue * 1) + px;
+  line-height: ($sizeValue / 10 * 0.625) + rem;
+}
+

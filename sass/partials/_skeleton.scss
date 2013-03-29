@@ -1,0 +1,66 @@
+@import "mixins";
+
+@include generate_layout(960px);
+
+@media only screen and (min-width: 1200px) {
+  @include generate_layout(1200px);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  @include generate_layout(768px);
+}
+
+@media only screen and (max-width: 767px) {
+  @include generate_layout(300px, $onecol: true);
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  @include generate_layout(420px, $onecol: true);
+}
+
+
+// * #Clearing
+// ==================================================
+
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: "\0020";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+
+.row,
+.clearfix {
+  zoom: 1;
+}
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+* {
+  @include box-sizing(border-box);
+}

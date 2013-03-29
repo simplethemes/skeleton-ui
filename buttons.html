@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/apple-touch-icon-57x57-precomposed.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+
+        <link rel="stylesheet" href="css/screen.css">
+        <script src="js/vendor/jquery-1.8.3.min.js"></script>
+        <script src="js/vendor/jquery.formalize.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- DEMO -->
+        <link rel="stylesheet" href="css/highlight.css">
+        <script src="js/vendor/highlight.pack.js"></script>
+        <script>
+        hljs.tabReplace = '    ';
+        hljs.initHighlightingOnLoad();
+        </script>
+
+
+
+
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+
+    <!-- Fonts -->
+
+    <!--
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans:400italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="//use.typekit.net/ciy1zgu.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    -->
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="header">
+
+            <div class="container">
+            <div class="sixteen columns">
+
+            <h1 id="logo"><a href="index.html">BLR<span>Further</span></a></h1>
+
+            <div id="nav-wrap">
+            <div id="nav">
+                <ul>
+                    <li><a href="#nowhere" title="Lorum ipsum dolor sit amet">Features</a></li>
+                    <li><a href="typography.html" title="Aliquam tincidunt mauris eu risus">Typography</a></li>
+                    <li><a href="buttons.html" title="Aliquam tincidunt mauris eu risus">Buttons</a></li>
+                    <li><a href="grid.html" title="Morbi in sem quis dui placerat ornare">Grid &amp; Examples</a></li>
+                    <li><a href="#nowhere" title="Pellentesque fermentum dolor">WordPress</a></li>
+                </ul>
+            </div>
+            </div>
+
+            </div>
+            </div>
+
+        </div>
+        <!-- //#header --><div class="container">
+    <div class="row">
+        <div class="sixteen columns">
+            <h1>Button Styles</h1>
+            <p>Skeleton UI includes a few sample buttons that you can remove, customize, or replace with your own.</p>
+
+            <pre><code>Default Button:<br />&lt;a class=&quot;btn&quot; href=&quot;#&quot;&gt;Default Button&lt;/a&gt;</code></pre>
+            <a class="btn" href="#">Default Button</a>
+
+            <pre><code>Red Button:<br />&lt;a class=&quot;btn red&quot; href=&quot;#&quot;&gt;Red Button&lt;/a&gt;</code></pre>
+            <a class="btn red" href="#">Red Button</a>
+
+            <pre><code>Large Blue Button:<br />&lt;a class=&quot;btn blue large&quot; href=&quot;#&quot;&gt;Big Blue Button&lt;/a&gt;</code></pre>
+            <a class="btn blue large" href="#">Big Blue Button</a>
+            <div class="clear"></div>
+            <h2>The SASS Way</h2>
+            <p>Generating the buttons below is simple with SASS/Compass using the <span class="c">@simple-button</span> mixin.</p>
+            <p>The simple-button mixin accepts three parameters: HSL. You can convert or get these values in your favorite image editor or use the handy <a href="http://hslpicker.com/" target="_blank">HSL Color Picker</a></p>
+
+<pre>SASS Formula:<code>.btn.orange { @include simple-button(35, 94%, 51%); }</code></pre>
+
+The Result: <a class="btn orange" href="#">Orange Button</a>
+
+<pre>SASS Forumla:<code>// Creates a .green button class with alias of .success <br />.btn.green,.btn.success @include simple-button(85, 72%, 33%);</code></pre>
+
+The Result: <a class="btn green" href="#">Green Button</a>
+
+<pre>CSS Result:<code>/* line 126, ../sass/_buttons.scss */
+.btn.green, .btn.success {
+  color: white;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0.32em 1.25em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: 1px solid #548215;
+  text-shadow: 0 -1px 0 #466c12;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 0 0 #8eb25d, 0 1px 1px 0 white;
+  -moz-box-shadow: inset 0 1px 0 0 #8eb25d, 0 1px 1px 0 white;
+  box-shadow: inset 0 1px 0 0 #8eb25d, 0 1px 1px 0 white;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5e9118), color-stop(100%, #4f7b14));
+  background: -webkit-linear-gradient(top, #5e9118, #4f7b14);
+  background: -moz-linear-gradient(top, #5e9118, #4f7b14);
+  background: -o-linear-gradient(top, #5e9118, #4f7b14);
+  background: linear-gradient(top, #5e9118, #4f7b14);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f$stop-gradient', endColorstr='#ffstart-gradient', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  background-repeat: repeat-x;
+  behavior: url("/css/PIE.php");
+  position: relative;
+}
+/* line 49, ../sass/_buttons.scss */
+.btn.green:hover, .btn.success:hover {
+  border: 1px solid #528609;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6ca31f), color-stop(100%, #54850f));
+  background: -webkit-linear-gradient(top, #6ca31f, #54850f);
+  background: -moz-linear-gradient(top, #6ca31f, #54850f);
+  background: -o-linear-gradient(top, #6ca31f, #54850f);
+  background: linear-gradient(top, #6ca31f, #54850f);
+  -webkit-box-shadow: inset 0 1px 0 0 #6ba022;
+  -moz-box-shadow: inset 0 1px 0 0 #6ba022;
+  box-shadow: inset 0 1px 0 0 #6ba022;
+  cursor: pointer;
+}
+/* line 66, ../sass/_buttons.scss */
+.btn.green:active, .btn.success:active {
+  -webkit-box-shadow: inset 0 2px 6px 0 #2e4909, inset 0 0 0 0 #2e4909, 0 1px 1px 0 #eeeeee;
+  -moz-box-shadow: inset 0 2px 6px 0 #2e4909, inset 0 0 0 0 #2e4909, 0 1px 1px 0 #eeeeee;
+  box-shadow: inset 0 2px 6px 0 #2e4909, inset 0 0 0 0 #2e4909, 0 1px 1px 0 #eeeeee;
+  border: 1px solid #375809;
+}</code></pre>
+            <a class="btn" href="#">Default Button</a>
+            <a class="btn red" href="#">Red Button</a>
+            <a class="btn green" href="#">Green Button</a>
+            <a class="btn blue" href="#">Blue Button</a>
+            <a class="btn orange" href="#">Orange Button</a>
+            <a class="btn gray" href="#">Gray Button</a>
+            <a class="btn white" href="#">White Button</a>
+            <a class="btn black" href="#">Black Button</a>
+            <a class="btn purp" href="#">Purple Button</a>
+        </div>
+    </div>
+    <!-- /row -->
+</div><!-- /container -->
+<div id="footer">
+	<div class="container">
+		<div class="eight columns">
+			<h6>Footer Column One</h6>
+		</div>
+		<div class="eight columns">
+			<h6>Footer Column Two</h6>
+		</div>
+		<div class="sixteen columns small aligncenter dim50 equal">
+			&copy; 2013 simple themes
+		</div>
+	</div>
+</div>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>

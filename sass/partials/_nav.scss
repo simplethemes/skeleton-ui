@@ -1,0 +1,77 @@
+#nav ul,#nav ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+#nav ul li {
+	float: left;
+	padding: 4px 18px 0px 0px;
+}
+#nav ul li a {
+	display: block;
+	padding: 0px 18px;
+	line-height: 28px;
+	color: $brand;
+	text-decoration:none;
+	@include border-radius(2px);
+	background-color:#222;
+	&:hover {
+		color: #fff;
+		background-color:#333;
+	}
+}
+
+a#shownav {
+	display: none;
+}
+
+@media only screen and (max-width: 767px) {
+
+h1#logo {
+	width: 100%;
+	display: block;
+}
+
+a#shownav {
+	display: block;
+	float: right;
+	text-indent: -9999em;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	background: url(../img/shownav.png) no-repeat 0 0;
+}
+
+#nav {
+	display: none;
+	float: left;
+	width: 100%
+}
+
+#nav ul {
+	margin-top:20px;
+}
+
+#nav ul li {
+	float: none;
+	margin:0;
+	padding:0 0 1px 0;
+}
+
+#nav ul li a {
+	padding: 0px 0px 0px 10px !important;
+	@include border-radius(0);
+	background-color:#222;
+}
+
+}
+
+@media screen and (min-width: 767px) {
+
+/* ensure #nav is visible on desktop version */
+#nav {
+	display: block !important;
+}
+
+}

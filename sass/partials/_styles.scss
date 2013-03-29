@@ -1,0 +1,42 @@
+/* Header */
+
+#header {
+	background-color: #111;
+	height: auto;
+	margin: 0;
+	padding: 10px 0px;
+}
+
+#header.fixed-header {
+	background-color: rgba(#000000, 0.85);
+}
+
+/* Header Brand/Logo */
+
+h1#logo {
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 0;
+	font-size: 32px;
+}
+
+h1#logo a {
+	color: $brand;
+	text-decoration: none;
+  	@include text-shadow(0px -2px 2px #000,0px 2px 2px #000);
+  	&:hover {
+  		color: #fff;
+  	}
+}
+
+h1#logo a span {
+	color: #fff;
+}
+
+/* Footer */
+
+#footer {
+	width: 100%;
+	background-color: #ccc;
+	padding: 20px 0px;
+}

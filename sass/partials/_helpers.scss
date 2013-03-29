@@ -1,0 +1,204 @@
+
+/* Responsive Images */
+img {max-width: 100%;height: auto;}
+
+/* Utiltity classes for margin balances */
+.remove-top { margin-top: 0 !important;padding-top: 0 !important; }
+.remove-bottom { margin-bottom: 0 !important;padding-bottom: 0 !important; }
+
+.add-top { margin-top: 20px !important; }
+.add-bottom { margin-bottom: 20px !important; }
+
+.half-top { margin-top: 10px !important; }
+.half-bottom { margin-bottom: 10px !important; }
+
+.nomargin {
+	margin: 0px !important;
+}
+
+.nopad {
+	padding: 0px !important;
+}
+
+.equal {
+	margin: 0px !important;
+	padding: 0px !important;
+	line-height: 100%;
+}
+
+.pad5 {
+	padding: 5px !important;
+}
+.pad10 {
+	padding: 10px !important;
+}
+.pad20 {
+	padding: 20px !important;
+}
+.pad30 {
+	padding: 30px !important;
+}
+.pad40 {
+	padding: 40px !important;
+}
+
+/* Rounded Corners */
+.rnd {
+	@include border-radius (4px);
+}
+
+/* Typography Helpers */
+
+.alignleft,.text-left,.textleft {
+	text-align:left !important;
+}
+
+.alignright,.text-right,.textright {
+	text-align:right !important;
+}
+
+.aligncenter,.text-center,.textcenter {
+	text-align: center !important;
+}
+
+.aligncenter,.center {
+	margin: 0 auto;
+	display:block;
+}
+
+
+.justify {
+	text-align: justify !important;
+}
+
+
+.normal {
+	font-weight: normal !important;
+}
+.bold {
+	font-weight: bold !important;
+}
+.tighten {
+	letter-spacing: -1px !important;
+}
+.loosen {
+	letter-spacing: normal !important;
+}
+.small {
+	font-size: 85% !important;
+}
+.smaller {
+	font-size: 75% !important;
+}
+.smallest {
+	font-size: 65% !important;
+}
+.subheading {
+	margin: 0px !important;
+	padding: 0px !important;
+	line-height: 100%;
+}
+
+
+/* Floats */
+.pull-right,.floatright,.float-right {float:right;}
+.pull-left,.floatleft,.float-left {float:left;}
+
+img.pull-left {margin: 0px 10px 0px 0px;}
+img.pull-right {margin: 0px 0px 0px 10px;}
+
+/* Quick Columns*/
+
+.one_half { width: 48%; }
+.one_third { width: 30.66%; }
+.two_thirds { width: 65.33%; }
+.one_fourth { width: 22%; }
+.three_fourths { width: 74%; }
+.one_fifth { width: 16.8%; }
+.two_fifth { width: 37.6%; }
+.three_fifth { width: 58.4%; }
+.four_fifth { width: 79.2%; }
+.one_sixth { width: 13.33%; }
+.five_sixth { width: 82.67%; }
+
+.one_half,
+.one_third,
+.two_thirds,
+.three_fourths,
+.one_fourth,
+.one_fifth,
+.two_fifth,
+.three_fifth,
+.four_fifth,
+.one_sixth,
+.five_sixth {
+	position: relative;
+	margin-right: 4%;
+	margin-bottom: 20px;
+	float: left;
+}
+
+.last {margin-right:0 !important;}
+
+/* Shades of Grey */
+.dim {
+	color: adjust-lightness(#000, 100%) !important;
+}
+.dark {
+	color: adjust-lightness(#000, 0%) !important;
+}
+
+@for $i from 10 through 90 {
+	@if $i % 10 == 0 {
+		.dim#{$i} {
+			color: adjust-lightness(#000, 100 - $i) !important;
+		}
+		.bgdim#{$i} {
+			background-color: adjust-lightness(#000, 100 - $i) !important;
+		}
+  	}
+}
+/* Callouts */
+.inset {
+	$inset-color: hsl(0, 0%, 94%);
+	background-color: $inset-color;
+	@include box-shadow (inset 1px 1px 10px darken($inset-color,10%));
+  	@include border-radius (6px);
+  	@include single-text-shadow(1px, 1px, 0, $color: lighten($inset-color,5%));
+	padding: 20px;
+	margin-top: $base-line-height;
+}
+
+.outset {
+	$outset-color: hsl(0, 0%, 94%);
+	background-color: $outset-color;
+	border: 1px solid darken($outset-color,7%);
+  	@include border-radius (6px);
+  	@include single-text-shadow(1px, 1px, 0, $color: lighten($outset-color,10%));
+	@include box-shadow (inset 1px 1px 0 lighten($outset-color,10%),inset -1px -1px 0 lighten($outset-color,5%));
+	padding: 20px;
+	margin-top: $base-line-height;
+	position: relative;
+}
+.inset h1,.outset h1,
+.inset h2,.outset h2,
+.inset h3,.outset h3 {
+	margin-top: 0;
+	line-height: $base-line-height;
+}
+
+span.c {
+  font-family: monospace, serif;
+  color: #4E83FB;
+  display: inline;
+  white-space: nowrap;
+  background: #f8f8f8;
+  padding:1px 3px;
+  border: 1px solid #eee;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+  -webkit-box-shadow: inset 1px 1px 10px #fff;
+  -moz-box-shadow: inset 1px 1px 10px #fff;
+  box-shadow: inset 1px 1px 10px #fff;
+}
