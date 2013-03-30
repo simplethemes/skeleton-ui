@@ -23,6 +23,13 @@ jQuery(document).ready(function($){
 	$(window).resize(positionFooter);
 	$(window).load(positionFooter);
 
+    // Open rel="external" in new window
+    $('a[rel="external"]')
+    .click( function() {
+    window.open( $(this).attr('href') );
+    return false;
+    });
+
 
 });
 
