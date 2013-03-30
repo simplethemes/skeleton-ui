@@ -2,26 +2,26 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8283",
   "files" : {
-    "\/sass\/partials\/_styles.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/partials\/_styles.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_styles.css",
-      "fileType" : 4,
-      "debugStyle" : 1
-    },
-    "\/html\/_inc\/content.html" : {
+    "\/html\/_tree\/index.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/_inc\/content.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/html\/_tree\/index.kit",
+      "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 65536
+    },
+    "\/sass\/print.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/print.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/print.css",
+      "fileType" : 4,
+      "debugStyle" : 1
     },
     "\/html\/_inc\/_footer.html" : {
       "ignoreWasSetByUser" : 0,
@@ -67,16 +67,14 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/img\/shownav.png" : {
+    "\/html\/_inc\/_header.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/shownav.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/shownav.png",
-      "initialSize" : 50354,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/html\/_inc\/_header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -90,14 +88,16 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/html\/_inc\/_header.html" : {
+    "\/img\/shownav.png" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/_inc\/_header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/img\/shownav.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/shownav.png",
+      "initialSize" : 50354,
+      "fileType" : 8192
     },
     "\/sass\/partials\/_nav.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -111,6 +111,15 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/html\/_tree\/typography.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/html\/_tree\/typography.kit",
+      "outputAbbreviatedPath" : "\/typography.html",
+      "fileType" : 65536
+    },
     "\/sass\/partials\/_skeleton.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -122,15 +131,6 @@
       "outputAbbreviatedPath" : "\/css\/_skeleton.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/html\/_tree\/typography.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/_tree\/typography.kit",
-      "outputAbbreviatedPath" : "\/typography.html",
-      "fileType" : 65536
     },
     "\/img\/apple-touch-icon-144x144-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -186,17 +186,6 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
-    "\/js\/main-ck.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/main-ck.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/main-ck-ck.js",
-      "fileType" : 64
-    },
     "\/sass\/partials\/_helpers.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -208,6 +197,17 @@
       "outputAbbreviatedPath" : "\/css\/_helpers.css",
       "fileType" : 4,
       "debugStyle" : 1
+    },
+    "\/js\/main-ck.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/main-ck.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/main-ck-ck.js",
+      "fileType" : 64
     },
     "\/html\/_tree\/buttons.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -227,15 +227,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/buttons.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/buttons.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -247,16 +238,26 @@
       "outputAbbreviatedPath" : "\/js\/main-ck.js",
       "fileType" : 64
     },
-    "\/js\/vendor\/highlight.pack.js" : {
+    "\/buttons.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/highlight.pack.js",
+      "inputAbbreviatedPath" : "\/buttons.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
+    "\/sass\/partials\/_tables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/partials\/_tables.scss",
       "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/highlight.pack-ck.js",
-      "fileType" : 64
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_tables.css",
+      "fileType" : 4,
+      "debugStyle" : 1
     },
     "\/img\/apple-touch-icon-72x72-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -269,15 +270,15 @@
       "initialSize" : 3998,
       "fileType" : 8192
     },
-    "\/sass\/partials\/_tables.scss" : {
+    "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/partials\/_tables.scss",
+      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_tables.css",
+      "outputAbbreviatedPath" : "\/css\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 1
     },
@@ -292,17 +293,16 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize-ck.js",
       "fileType" : 64
     },
-    "\/sass\/_variables.scss" : {
+    "\/js\/vendor\/highlight.pack.js" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
+      "inputAbbreviatedPath" : "\/js\/vendor\/highlight.pack.js",
       "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/highlight.pack-ck.js",
+      "fileType" : 64
     },
     "\/css\/print.css" : {
       "ignoreWasSetByUser" : 0,
@@ -465,26 +465,26 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
-    "\/sass\/print.scss" : {
+    "\/sass\/partials\/_styles.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/print.scss",
+      "inputAbbreviatedPath" : "\/sass\/partials\/_styles.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/print.css",
+      "outputAbbreviatedPath" : "\/css\/_styles.css",
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/html\/_tree\/index.kit" : {
+    "\/html\/_inc\/content.html" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/html\/_tree\/index.kit",
-      "outputAbbreviatedPath" : "\/index.html",
-      "fileType" : 65536
+      "inputAbbreviatedPath" : "\/html\/_inc\/content.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     }
   },
   "manualImportLinks" : [
