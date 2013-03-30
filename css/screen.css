@@ -189,7 +189,7 @@ kbd,
 pre,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 0.95em;
   line-height: 1.57895em;
   overflow: auto;
@@ -2122,7 +2122,7 @@ table {
 
 /* line 118, ../sass/partials/_buttons.scss */
 .btn span {
-  font-size: .8em !important;
+  font-size: 0.8em !important;
 }
 
 /* line 127, ../sass/partials/_buttons.scss */
@@ -2134,7 +2134,7 @@ input[type="button"] {
   color: #333333 !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2207,7 +2207,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2261,7 +2261,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2315,7 +2315,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2369,7 +2369,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2423,7 +2423,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2477,7 +2477,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2531,7 +2531,7 @@ input[type="button"]::-moz-focus-inner {
   color: #111111 !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -2585,7 +2585,7 @@ input[type="button"]::-moz-focus-inner {
   color: white !important;
   font-size: 14px;
   line-height: 1.5;
-  padding: .32em 1.25em;
+  padding: 0.32em 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
   text-align: center;
@@ -3055,13 +3055,13 @@ span.c {
   white-space: nowrap;
   background: #f8f8f8;
   padding: 1px 3px;
-  border: 1px solid #eee;
+  border: 1px solid #eeeeee;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
   border-radius: 2px;
-  -webkit-box-shadow: inset 1px 1px 10px #fff;
-  -moz-box-shadow: inset 1px 1px 10px #fff;
-  box-shadow: inset 1px 1px 10px #fff;
+  -webkit-box-shadow: inset 1px 1px 10px white;
+  -moz-box-shadow: inset 1px 1px 10px white;
+  box-shadow: inset 1px 1px 10px white;
 }
 
 /* @end */

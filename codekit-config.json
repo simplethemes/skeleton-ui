@@ -46,17 +46,14 @@
       "initialSize" : 50354,
       "fileType" : 8192
     },
-    "\/sass\/screen.scss" : {
+    "\/codekit\/_tree\/buttons.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/screen.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/screen.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "inputAbbreviatedPath" : "\/codekit\/_tree\/buttons.kit",
+      "outputAbbreviatedPath" : "\/buttons.html",
+      "fileType" : 65536
     },
     "\/img\/apple-touch-icon-114x114-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
@@ -69,14 +66,17 @@
       "initialSize" : 8023,
       "fileType" : 8192
     },
-    "\/codekit\/_tree\/buttons.kit" : {
+    "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_tree\/buttons.kit",
-      "outputAbbreviatedPath" : "\/buttons.html",
-      "fileType" : 65536
+      "inputAbbreviatedPath" : "\/sass\/screen.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/screen.css",
+      "fileType" : 4,
+      "debugStyle" : 1
     },
     "\/sass\/partials\/_nav.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -156,15 +156,6 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
-    "\/codekit\/_inc\/_header.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_inc\/_header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/main-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -188,6 +179,15 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/codekit\/_inc\/_header.html" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/_inc\/_header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/codekit\/_tree\/typography.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -206,15 +206,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 32768
     },
-    "\/buttons.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/buttons.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
     "\/js\/main.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -225,6 +216,15 @@
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/main-ck.js",
       "fileType" : 64
+    },
+    "\/buttons.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/buttons.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/sass\/partials\/_tables.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -260,17 +260,14 @@
       "initialSize" : 3998,
       "fileType" : 8192
     },
-    "\/sass\/_variables.scss" : {
+    "\/codekit\/_inc\/content.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "inputAbbreviatedPath" : "\/codekit\/_inc\/content.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/js\/vendor\/jquery.formalize.js" : {
       "ignoreWasSetByUser" : 0,
@@ -292,14 +289,17 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/codekit\/_inc\/content.html" : {
+    "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
+      "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_inc\/content.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
+      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 1
     },
     "\/typography.html" : {
       "ignoreWasSetByUser" : 0,
@@ -310,15 +310,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/codekit\/_tree\/index.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_tree\/index.kit",
-      "outputAbbreviatedPath" : "\/index.html",
-      "fileType" : 65536
-    },
     "\/css\/ie.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -327,6 +318,15 @@
       "inputAbbreviatedPath" : "\/css\/ie.css",
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
+    },
+    "\/codekit\/_tree\/index.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/_tree\/index.kit",
+      "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 65536
     },
     "\/sass\/partials\/_buttons.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -352,8 +352,8 @@
       "fileType" : 8192
     },
     "\/codekit\/_inc\/_footer.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/codekit\/_inc\/_footer.html",
@@ -462,18 +462,6 @@
       "outputAbbreviatedPath" : "\/grid.html",
       "fileType" : 65536
     },
-    "\/sass\/print.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/print.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/print.css",
-      "fileType" : 4,
-      "debugStyle" : 1
-    },
     "\/sass\/partials\/_styles.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -483,6 +471,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/_styles.css",
+      "fileType" : 4,
+      "debugStyle" : 1
+    },
+    "\/sass\/print.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/print.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/print.css",
       "fileType" : 4,
       "debugStyle" : 1
     }
