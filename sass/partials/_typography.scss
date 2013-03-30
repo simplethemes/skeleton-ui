@@ -74,3 +74,10 @@ h6 {
     @include leader(1, $h6-font-size);
     @include trailer(1, $h6-font-size);
 }
+
+.subheading,.subheading h1,.subheading h2,.subheading h3,.subheading h4 {
+    margin: 0px !important;
+    padding: 0px !important;
+    line-height: 100%;
+}
+

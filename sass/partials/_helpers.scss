@@ -4,7 +4,7 @@ img {max-width: 100%;height: auto;}
 
 /* Utiltity classes for margin balances */
 .remove-top { margin-top: 0 !important;padding-top: 0 !important; }
-.remove-bottom { margin-bottom: 0 !important;padding-bottom: 0 !important; }
+.remove-bottom { margin-bottom: 0 !important; padding-bottom: 0 !important;}
 
 .add-top { margin-top: 20px !important; }
 .add-bottom { margin-bottom: 20px !important; }
@@ -61,22 +61,46 @@ img {max-width: 100%;height: auto;}
 	text-align: center !important;
 }
 
-.aligncenter,.center {
+.blockcenter,.aligncenter,.center {
 	margin: 0 auto;
 	display:block;
 }
-
+.blockcenter {
+	display: inline-block;
+}
 
 .justify {
 	text-align: justify !important;
 }
-
-
 .normal {
 	font-weight: normal !important;
 }
 .bold {
 	font-weight: bold !important;
+}
+.text100 {
+	font-weight: 100 !important;
+}
+.text200 {
+	font-weight: 200 !important;
+}
+.text300 {
+	font-weight: 300 !important;
+}
+.text400 {
+	font-weight: 400 !important;
+}
+.text500 {
+	font-weight: 500 !important;
+}
+.text600 {
+	font-weight: 600 !important;
+}
+.text700 {
+	font-weight: 700 !important;
+}
+.text800 {
+	font-weight: 800 !important;
 }
 .tighten {
 	letter-spacing: -1px !important;
@@ -84,20 +108,40 @@ img {max-width: 100%;height: auto;}
 .loosen {
 	letter-spacing: normal !important;
 }
+
+
 .small {
-	font-size: 85% !important;
+	@include font-size(12);
+	@include line-height(12);
 }
 .smaller {
-	font-size: 75% !important;
+	@include font-size(11);
+	@include line-height(11);
 }
 .smallest {
-	font-size: 65% !important;
+	@include font-size(10);
+	@include line-height(10);
 }
-.subheading {
-	margin: 0px !important;
-	padding: 0px !important;
-	line-height: 100%;
+
+
+.large {
+	@include font-size(24);
+	@include line-height(24);
 }
+.larger {
+	@include font-size(30);
+	@include line-height(30);
+}
+.largest {
+	@include font-size(36);
+	@include line-height(36);
+}
+.huge {
+	@include font-size(46);
+	@include line-height(46);
+}
+
+
 
 
 /* Floats */

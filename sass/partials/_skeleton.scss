@@ -2,7 +2,11 @@
 
 @include generate_layout(960px);
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1400px) {
+  @include generate_layout(1400px);
+}
+
+@media only screen and (min-width: 1199px) and (max-width: 1399px) {
   @include generate_layout(1200px);
 }
 
