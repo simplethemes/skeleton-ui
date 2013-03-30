@@ -23,17 +23,6 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/img\/shownav.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/shownav.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/shownav.png",
-      "initialSize" : 50354,
-      "fileType" : 8192
-    },
     "\/sass\/partials\/_typography.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -46,14 +35,16 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/codekit\/_tree\/buttons.kit" : {
+    "\/img\/shownav.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_tree\/buttons.kit",
-      "outputAbbreviatedPath" : "\/buttons.html",
-      "fileType" : 65536
+      "inputAbbreviatedPath" : "\/img\/shownav.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/shownav.png",
+      "initialSize" : 50354,
+      "fileType" : 8192
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -77,6 +68,15 @@
       "outputAbbreviatedPath" : "\/img\/apple-touch-icon-114x114-precomposed.png",
       "initialSize" : 8023,
       "fileType" : 8192
+    },
+    "\/codekit\/_tree\/buttons.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/_tree\/buttons.kit",
+      "outputAbbreviatedPath" : "\/buttons.html",
+      "fileType" : 65536
     },
     "\/sass\/partials\/_nav.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -156,6 +156,15 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
+    "\/codekit\/_inc\/_header.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/_inc\/_header.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/js\/main-ck.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -178,15 +187,6 @@
       "outputAbbreviatedPath" : "\/css\/_helpers.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/codekit\/_inc\/_header.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_inc\/_header.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/codekit\/_tree\/typography.kit" : {
       "ignoreWasSetByUser" : 0,
@@ -226,6 +226,18 @@
       "outputAbbreviatedPath" : "\/js\/main-ck.js",
       "fileType" : 64
     },
+    "\/sass\/partials\/_tables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/partials\/_tables.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_tables.css",
+      "fileType" : 4,
+      "debugStyle" : 1
+    },
     "\/js\/vendor\/highlight.pack.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -235,38 +247,6 @@
       "outputStyle" : 1,
       "syntaxCheckerStyle" : 1,
       "outputAbbreviatedPath" : "\/js\/vendor\/highlight.pack-ck.js",
-      "fileType" : 64
-    },
-    "\/sass\/_variables.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 1
-    },
-    "\/codekit\/_inc\/content.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_inc\/content.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
-    },
-    "\/js\/vendor\/jquery.formalize.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize-ck.js",
       "fileType" : 64
     },
     "\/img\/apple-touch-icon-72x72-precomposed.png" : {
@@ -280,6 +260,29 @@
       "initialSize" : 3998,
       "fileType" : 8192
     },
+    "\/sass\/_variables.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/_variables.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_variables.css",
+      "fileType" : 4,
+      "debugStyle" : 1
+    },
+    "\/js\/vendor\/jquery.formalize.js" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize-ck.js",
+      "fileType" : 64
+    },
     "\/css\/print.css" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -289,17 +292,14 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 16
     },
-    "\/sass\/partials\/_tables.scss" : {
+    "\/codekit\/_inc\/content.html" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/partials\/_tables.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_tables.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "inputAbbreviatedPath" : "\/codekit\/_inc\/content.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
     },
     "\/typography.html" : {
       "ignoreWasSetByUser" : 0,
@@ -310,15 +310,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/css\/ie.css" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/css\/ie.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
     "\/codekit\/_tree\/index.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -327,6 +318,15 @@
       "inputAbbreviatedPath" : "\/codekit\/_tree\/index.kit",
       "outputAbbreviatedPath" : "\/index.html",
       "fileType" : 65536
+    },
+    "\/css\/ie.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/ie.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
     },
     "\/sass\/partials\/_buttons.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -351,6 +351,15 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
+    "\/codekit\/_inc\/_footer.html" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/_inc\/_footer.html",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 2048
+    },
     "\/sass\/partials\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -362,15 +371,6 @@
       "outputAbbreviatedPath" : "\/css\/_normalize.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/codekit\/_inc\/_footer.html" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_inc\/_footer.html",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 2048
     },
     "\/index.html" : {
       "ignoreWasSetByUser" : 0,
@@ -442,15 +442,6 @@
       "outputAbbreviatedPath" : "No Output Path",
       "fileType" : 2048
     },
-    "\/codekit\/_tree\/grid.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/_tree\/grid.kit",
-      "outputAbbreviatedPath" : "\/grid.html",
-      "fileType" : 65536
-    },
     "\/img\/apple-touch-icon-precomposed.png" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -462,17 +453,14 @@
       "initialSize" : 2909,
       "fileType" : 8192
     },
-    "\/sass\/partials\/_styles.scss" : {
+    "\/codekit\/_tree\/grid.kit" : {
       "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
+      "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/sass\/partials\/_styles.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 0,
-      "outputAbbreviatedPath" : "\/css\/_styles.css",
-      "fileType" : 4,
-      "debugStyle" : 1
+      "inputAbbreviatedPath" : "\/codekit\/_tree\/grid.kit",
+      "outputAbbreviatedPath" : "\/grid.html",
+      "fileType" : 65536
     },
     "\/sass\/print.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -483,6 +471,18 @@
       "outputStyle" : 1,
       "shouldRunBless" : 0,
       "outputAbbreviatedPath" : "\/css\/print.css",
+      "fileType" : 4,
+      "debugStyle" : 1
+    },
+    "\/sass\/partials\/_styles.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/sass\/partials\/_styles.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 0,
+      "outputAbbreviatedPath" : "\/css\/_styles.css",
       "fileType" : 4,
       "debugStyle" : 1
     }
