@@ -309,7 +309,6 @@ $color: hsl(0, 0, 100%) !default;
 }
 
 
-
 // Use REM in modern browsers and fallback to pixels for IE8-
 // http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/
 //
@@ -317,8 +316,8 @@ $color: hsl(0, 0, 100%) !default;
 //
 // Compatible in IE6+.
 @mixin font-size( $sizeValue: 1.6 ) {
-  font-size: ($sizeValue * 1) + px;
-  font-size: ($sizeValue / 10 * 0.625) + rem;
+  font-size: ($sizeValue * 1) + px !important;
+  font-size: ($sizeValue / 10 * 0.625) + rem !important;
 }
 
 

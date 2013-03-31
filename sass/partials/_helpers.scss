@@ -5,6 +5,7 @@ img {max-width: 100%;height: auto;}
 /* Utiltity classes for margin balances */
 .remove-top { margin-top: 0 !important;padding-top: 0 !important; }
 .remove-bottom { margin-bottom: 0 !important; padding-bottom: 0 !important;}
+.remove-top-bottom { margin-bottom: 0 !important; padding-bottom: 0 !important;margin-top: 0 !important;padding-top: 0 !important;}
 
 .add-top { margin-top: 20px !important; }
 .add-bottom { margin-bottom: 20px !important; }
@@ -142,8 +143,6 @@ img {max-width: 100%;height: auto;}
 }
 
 
-
-
 /* Floats */
 .pull-right,.floatright,.float-right {float:right;}
 .pull-left,.floatleft,.float-left {float:left;}
@@ -246,3 +245,8 @@ span.c {
   -moz-box-shadow: inset 1px 1px 10px #fff;
   box-shadow: inset 1px 1px 10px #fff;
 }
+
+.fade,a.fade:link,a.fade:hover,a.fade:visited,a.fade:active,a.fade:focus {
+  @include transition(color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear);
+}
+

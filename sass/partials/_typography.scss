@@ -12,10 +12,6 @@ a, a:link {
     }
 }
 
-*:link, *:visited, *:hover, *:active, *:focus {
-  @include transition(color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear);
-}
-
 .brand {
     color: $brand;
 }
@@ -30,6 +26,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: $heading-font-family;
 }
 
+
 h1 {
     color: $h1-color;
     /* Set the font-size and line-height while keeping a proper vertical rhythm. */
@@ -37,7 +34,6 @@ h1 {
     /* Set 1 unit of vertical rhythm on the top and bottom margins. */
     @include leader(1, $h1-font-size);
     @include trailer(1, $h1-font-size);
-
 }
 
 h2 {
@@ -80,4 +76,3 @@ h6 {
     padding: 0px !important;
     line-height: 100%;
 }
-

@@ -1,6 +1,7 @@
 
 //  Base Settings
 	@import "variables";
+	@import "mixins";
 
 /* @group Normalize */
 
@@ -40,6 +41,13 @@
 /* @group Tables */
 
 	@import "partials/tables";
+
+/* @end */
+
+
+/* @group Tabs */
+
+	@import "partials/tabs";
 
 /* @end */
 

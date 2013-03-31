@@ -1,0 +1,48 @@
+.tabs {
+	margin: 20px 0px 0px 0px;
+	padding: 0;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	width: 100%;
+}
+
+.tabs li {
+	list-style:none;
+	display:inline-block;
+	margin:0;
+	padding:0;
+	float: left;
+}
+
+.tabs a {
+	background:hsl(0, 0%,95%);
+	color:hsl(0, 0%,0%);
+	text-shadow:0px 1px 0px hsl(0, 0%,100%);
+	text-decoration:none;
+	border: 1px solid hsl(0, 0%, 80%);
+	padding:4px 16px;
+	margin: 0px 2px 0px 0px;
+	position: relative;
+	top: 1px;
+	display:inline-block;
+	@include box-shadow (inset 0px 1px 0px #fff);
+	&:hover {
+		color:hsl(0, 0%,10%);
+		background:hsl(0, 0%,90%);
+	}
+}
+
+.tabs a.active {
+	background:#fff;
+	color:$brand;
+	text-shadow:none;
+	border: 1px solid hsl(0, 0%, 80%);
+	border-bottom: 1px solid hsl(0, 0%, 100%);
+	@include box-shadow (inset 0px 5px 6px hsl(0, 0%, 95%));
+  	@include transition(background-color 0.5s linear, border-color 0.5s linear, box-shadow 0.5s linear);
+}
+
+.tabcontainer {
+	display: inline-block;
+	width: 100%;
+}
