@@ -1,3 +1,7 @@
+#nav ul {
+	float: right;
+}
+
 #nav ul,#nav ul li {
 	margin: 0;
 	padding: 0;
@@ -8,31 +12,27 @@
 	padding: 4px 18px 0px 0px;
 }
 #nav ul li a {
+	font-size: 14px;
 	display: block;
-	padding: 0px 18px;
-	line-height: 28px;
-	color: $brand;
+	color: hsl(0, 0%, 60%);
 	text-decoration:none;
-	@include border-radius(2px);
-	background-color:#222;
+	text-shadow: 1px 1px 0px #000;
 	&:hover {
-		color: #fff;
-		background-color:#333;
+		color: $brand;
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-	#nav ul li a {
-		font-size:.85em;
-		padding: 0px 10px;
-	}
-}
 
 a#shownav {
 	display: none;
 }
 
 @media only screen and (max-width: 767px) {
+
+
+#nav ul {
+	float: none;
+}
 
 h1#logo {
 	width: 100%;
@@ -64,13 +64,9 @@ a#shownav {
 	float: none;
 	margin:0;
 	padding:0 0 1px 0;
+	line-height: 28px;
 }
 
-#nav ul li a {
-	padding: 0px 0px 0px 10px !important;
-	@include border-radius(0);
-	background-color:#222;
-}
 
 }
 
