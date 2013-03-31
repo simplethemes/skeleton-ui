@@ -38,7 +38,7 @@ button,
 input[type="reset"],
 input[type="submit"],
 input[type="button"] {
-  @include simple-button(0, 0%, 95%, #333);
+  @include simple-button(0, 0%, 85%, #333);
   // IE7
   *padding-top: 2px;
   *padding-bottom: 0;
