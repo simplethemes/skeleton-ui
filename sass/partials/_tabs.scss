@@ -39,7 +39,7 @@
 	border: 1px solid hsl(0, 0%, 80%);
 	border-bottom: 1px solid hsl(0, 0%, 100%);
 	@include box-shadow (inset 0px 5px 6px hsl(0, 0%, 95%));
-  	@include transition(background-color 0.5s linear, border-color 0.5s linear, box-shadow 0.5s linear);
+  	@include transition(background-color 0.09s linear, box-shadow 0.5s linear);
 }
 
 .tabcontainer {
