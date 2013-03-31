@@ -25,6 +25,17 @@
       "initialSize" : 8023,
       "fileType" : 8192
     },
+    "\/img\/shownav.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/shownav.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/shownav.png",
+      "initialSize" : 50354,
+      "fileType" : 8192
+    },
     "\/sass\/partials\/_typography.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -36,17 +47,6 @@
       "outputAbbreviatedPath" : "\/css\/_typography.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/img\/shownav.png" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/shownav.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/shownav.png",
-      "initialSize" : 50354,
-      "fileType" : 8192
     },
     "\/sass\/screen.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -200,6 +200,17 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
+    "\/img\/apple-touch-icon-72x72-precomposed.png" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/img\/apple-touch-icon-72x72-precomposed.png",
+      "processed" : 0,
+      "outputAbbreviatedPath" : "\/img\/apple-touch-icon-72x72-precomposed.png",
+      "initialSize" : 3998,
+      "fileType" : 8192
+    },
     "\/js\/vendor\/highlight.pack.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -211,16 +222,16 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/highlight.pack-ck.js",
       "fileType" : 64
     },
-    "\/img\/apple-touch-icon-72x72-precomposed.png" : {
+    "\/js\/vendor\/jquery.formalize.js" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/img\/apple-touch-icon-72x72-precomposed.png",
-      "processed" : 0,
-      "outputAbbreviatedPath" : "\/img\/apple-touch-icon-72x72-precomposed.png",
-      "initialSize" : 3998,
-      "fileType" : 8192
+      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize.js",
+      "outputStyle" : 1,
+      "syntaxCheckerStyle" : 1,
+      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize-ck.js",
+      "fileType" : 64
     },
     "\/sass\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
@@ -233,17 +244,6 @@
       "outputAbbreviatedPath" : "\/css\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 1
-    },
-    "\/js\/vendor\/jquery.formalize.js" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize.js",
-      "outputStyle" : 1,
-      "syntaxCheckerStyle" : 1,
-      "outputAbbreviatedPath" : "\/js\/vendor\/jquery.formalize-ck.js",
-      "fileType" : 64
     },
     "\/css\/print.css" : {
       "ignoreWasSetByUser" : 0,
@@ -366,6 +366,15 @@
       "outputAbbreviatedPath" : "\/js\/vendor\/jquery-1.8.3.min-ck.js",
       "fileType" : 64
     },
+    "\/css\/highlight.css" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/css\/highlight.css",
+      "outputAbbreviatedPath" : "No Output Path",
+      "fileType" : 16
+    },
     "\/sass\/_mixins.scss" : {
       "ignoreWasSetByUser" : 1,
       "ignore" : 1,
@@ -378,15 +387,6 @@
       "fileType" : 4,
       "debugStyle" : 1
     },
-    "\/codekit\/grid.kit" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 0,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/codekit\/grid.kit",
-      "outputAbbreviatedPath" : "\/grid.html",
-      "fileType" : 65536
-    },
     "\/codekit\/index.kit" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
@@ -394,6 +394,15 @@
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/codekit\/index.kit",
       "outputAbbreviatedPath" : "\/index.html",
+      "fileType" : 65536
+    },
+    "\/codekit\/grid.kit" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 0,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/codekit\/grid.kit",
+      "outputAbbreviatedPath" : "\/grid.html",
       "fileType" : 65536
     },
     "\/img\/noise.png" : {

@@ -2,3 +2,4 @@ sass-cache
 main-ck.js
 *.scssc
 .DS_Store
+codekit-config.json
