@@ -2,10 +2,9 @@
 # More info at https://github.com/guard/guard#readme
 
 guard 'livereload' do
-  watch(%r{.+\.(css|html)$})
+  watch(%r{.+\.(css|html|twig)$})
 end
 
-guard 'sass',
-	:input => 'sass',
-	:output => 'css',
-	:load_paths => Dir.glob(File.join(Gem.dir, "gems", "compass*", "frameworks/compass/*"))
+guard 'compass' do
+  watch(%r{.+\.scss$})
+end

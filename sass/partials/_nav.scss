@@ -22,6 +22,9 @@
 	}
 }
 
+#nav ul li.active a  {
+	color: $brand;
+}
 
 a#shownav {
 	display: none;
