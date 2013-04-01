@@ -519,29 +519,29 @@ table {
 a, a:link {
   color: #4e83fb;
 }
-/* line 7, ../sass/partials/_typography.scss */
+/* line 5, ../sass/partials/_typography.scss */
 a:hover, a:link:hover {
   color: #4e83fb;
   text-decoration: none;
 }
 
-/* line 15, ../sass/partials/_typography.scss */
+/* line 11, ../sass/partials/_typography.scss */
 .brand {
   color: #4e83fb;
 }
 
-/* line 19, ../sass/partials/_typography.scss */
+/* line 15, ../sass/partials/_typography.scss */
 .brand-alt {
   color: #ee9525;
 }
 
 /* Headings */
-/* line 25, ../sass/partials/_typography.scss */
+/* line 21, ../sass/partials/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: Sans-Serif;
 }
 
-/* line 30, ../sass/partials/_typography.scss */
+/* line 26, ../sass/partials/_typography.scss */
 h1 {
   color: black;
   /* Set the font-size and line-height while keeping a proper vertical rhythm. */
@@ -552,7 +552,7 @@ h1 {
   margin-bottom: 0.58334em;
 }
 
-/* line 39, ../sass/partials/_typography.scss */
+/* line 35, ../sass/partials/_typography.scss */
 h2 {
   color: #222222;
   font-size: 2.1429em;
@@ -561,7 +561,7 @@ h2 {
   margin-bottom: 0.69999em;
 }
 
-/* line 46, ../sass/partials/_typography.scss */
+/* line 42, ../sass/partials/_typography.scss */
 h3 {
   color: #333333;
   font-size: 1.7143em;
@@ -570,7 +570,7 @@ h3 {
   margin-bottom: 0.87499em;
 }
 
-/* line 53, ../sass/partials/_typography.scss */
+/* line 49, ../sass/partials/_typography.scss */
 h4 {
   color: #666666;
   font-size: 1.2857em;
@@ -579,7 +579,7 @@ h4 {
   margin-bottom: 1.16668em;
 }
 
-/* line 60, ../sass/partials/_typography.scss */
+/* line 56, ../sass/partials/_typography.scss */
 h5 {
   color: #777777;
   font-size: 1.1429em;
@@ -588,7 +588,7 @@ h5 {
   margin-bottom: 1.31245em;
 }
 
-/* line 67, ../sass/partials/_typography.scss */
+/* line 63, ../sass/partials/_typography.scss */
 h6 {
   color: #777777;
   font-size: 1.1429em;
@@ -597,11 +597,29 @@ h6 {
   margin-bottom: 1.31245em;
 }
 
-/* line 74, ../sass/partials/_typography.scss */
+/* line 70, ../sass/partials/_typography.scss */
 .subheading, .subheading h1, .subheading h2, .subheading h3, .subheading h4 {
   margin: 0px !important;
   padding: 0px !important;
   line-height: 100%;
+}
+
+/* line 76, ../sass/partials/_typography.scss */
+blockquote {
+  background-color: #ededed;
+  border-left: 4px solid #d4d4d4;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 10px 10px 20px;
+  margin-top: 24px;
+  position: relative;
+  font-style: italic;
+  font-family: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+/* line 88, ../sass/partials/_typography.scss */
+blockquote p {
+  margin: 10px 0 10px 0;
+  font-size: 1.25em;
 }
 
 /* @end */
@@ -814,216 +832,7 @@ h6 {
   padding-left: 900px;
 }
 
-@media only screen and (min-width: 1400px) {
-  /* line 6, ../sass/_mixins.scss */
-  .container {
-    position: relative;
-    width: 1400px;
-    margin: 0 auto;
-    padding: 0;
-  }
-
-  /* line 45, ../sass/_mixins.scss */
-  .span1,
-  .one.column,
-  .one.columns {
-    width: 67.5px;
-  }
-
-  /* line 48, ../sass/_mixins.scss */
-  .span2, .two.columns {
-    width: 155px;
-  }
-
-  /* line 51, ../sass/_mixins.scss */
-  .span3, .three.columns {
-    width: 242.5px;
-  }
-
-  /* line 54, ../sass/_mixins.scss */
-  .span4, .four.columns {
-    width: 330px;
-  }
-
-  /* line 57, ../sass/_mixins.scss */
-  .span5, .five.columns {
-    width: 417.5px;
-  }
-
-  /* line 60, ../sass/_mixins.scss */
-  .span6, .six.columns {
-    width: 505px;
-  }
-
-  /* line 63, ../sass/_mixins.scss */
-  .span7, .seven.columns {
-    width: 592.5px;
-  }
-
-  /* line 66, ../sass/_mixins.scss */
-  .span8, .eight.columns {
-    width: 680px;
-  }
-
-  /* line 69, ../sass/_mixins.scss */
-  .span9, .nine.columns {
-    width: 767.5px;
-  }
-
-  /* line 72, ../sass/_mixins.scss */
-  .span10, .ten.columns {
-    width: 855px;
-  }
-
-  /* line 75, ../sass/_mixins.scss */
-  .span11, .eleven.columns {
-    width: 942.5px;
-  }
-
-  /* line 78, ../sass/_mixins.scss */
-  .span12, .twelve.columns {
-    width: 1030px;
-  }
-
-  /* line 81, ../sass/_mixins.scss */
-  .span13, .thirteen.columns {
-    width: 1117.5px;
-  }
-
-  /* line 84, ../sass/_mixins.scss */
-  .span14, .fourteen.columns {
-    width: 1205px;
-  }
-
-  /* line 87, ../sass/_mixins.scss */
-  .span15, .fifteen.columns {
-    width: 1292.5px;
-  }
-
-  /* line 90, ../sass/_mixins.scss */
-  .span16, .sixteen.columns {
-    width: 1380px;
-  }
-
-  /* line 93, ../sass/_mixins.scss */
-  .one-third.column {
-    width: 446.66667px;
-  }
-
-  /* line 96, ../sass/_mixins.scss */
-  .two-thirds.column {
-    width: 913.33333px;
-  }
-
-  /* line 100, ../sass/_mixins.scss */
-  .one-third.column.alpha,
-  .one-third.column.omega {
-    width: 456.66667px;
-  }
-
-  /* line 104, ../sass/_mixins.scss */
-  .two-thirds.column.alpha,
-  .two-thirds.column.omega {
-    width: 923.33333px;
-  }
-
-  /* line 18, ../sass/_mixins.scss */
-  .column, .columns {
-    float: left;
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  /* line 23, ../sass/_mixins.scss */
-  .column.alpha, .columns.alpha {
-    margin-left: 0;
-  }
-  /* line 26, ../sass/_mixins.scss */
-  .column.omega, .columns.omega {
-    margin-right: 0;
-  }
-
-  /* line 111, ../sass/_mixins.scss */
-  .offset-by-half {
-    padding-left: 43.75px;
-  }
-
-  /* line 114, ../sass/_mixins.scss */
-  .offset1, .offset-by-one {
-    padding-left: 87.5px;
-  }
-
-  /* line 117, ../sass/_mixins.scss */
-  .offset2, .offset-by-two {
-    padding-left: 175px;
-  }
-
-  /* line 120, ../sass/_mixins.scss */
-  .offset3, .offset-by-three {
-    padding-left: 262.5px;
-  }
-
-  /* line 123, ../sass/_mixins.scss */
-  .offset4, .offset-by-four {
-    padding-left: 350px;
-  }
-
-  /* line 126, ../sass/_mixins.scss */
-  .offset5, .offset-by-five {
-    padding-left: 437.5px;
-  }
-
-  /* line 129, ../sass/_mixins.scss */
-  .offset6, .offset-by-six {
-    padding-left: 525px;
-  }
-
-  /* line 132, ../sass/_mixins.scss */
-  .offset7, .offset-by-seven {
-    padding-left: 612.5px;
-  }
-
-  /* line 135, ../sass/_mixins.scss */
-  .offset8, .offset-by-eight {
-    padding-left: 700px;
-  }
-
-  /* line 138, ../sass/_mixins.scss */
-  .offset9, .offset-by-nine {
-    padding-left: 787.5px;
-  }
-
-  /* line 141, ../sass/_mixins.scss */
-  .offset10, .offset-by-ten {
-    padding-left: 875px;
-  }
-
-  /* line 144, ../sass/_mixins.scss */
-  .offset11, .offset-by-eleven {
-    padding-left: 962.5px;
-  }
-
-  /* line 147, ../sass/_mixins.scss */
-  .offset12, .offset-by-twelve {
-    padding-left: 1050px;
-  }
-
-  /* line 150, ../sass/_mixins.scss */
-  .offset13, .offset-by-thirteen {
-    padding-left: 1137.5px;
-  }
-
-  /* line 153, ../sass/_mixins.scss */
-  .offset14, .offset-by-fourteen {
-    padding-left: 1225px;
-  }
-
-  /* line 156, ../sass/_mixins.scss */
-  .offset15, .offset-by-fifteen {
-    padding-left: 1312.5px;
-  }
-}
-@media only screen and (min-width: 1199px) and (max-width: 1399px) {
+@media only screen and (min-width: 1200px) {
   /* line 6, ../sass/_mixins.scss */
   .container {
     position: relative;
@@ -1615,7 +1424,7 @@ h6 {
     padding-left: 0;
   }
 }
-/* line 28, ../sass/partials/_skeleton.scss */
+/* line 25, ../sass/partials/_skeleton.scss */
 .container:after {
   content: "\0020";
   display: block;
@@ -1624,7 +1433,7 @@ h6 {
   visibility: hidden;
 }
 
-/* line 39, ../sass/partials/_skeleton.scss */
+/* line 36, ../sass/partials/_skeleton.scss */
 .clearfix:before,
 .clearfix:after,
 .row:before,
@@ -1637,19 +1446,19 @@ h6 {
   height: 0;
 }
 
-/* line 49, ../sass/partials/_skeleton.scss */
+/* line 46, ../sass/partials/_skeleton.scss */
 .row:after,
 .clearfix:after {
   clear: both;
 }
 
-/* line 54, ../sass/partials/_skeleton.scss */
+/* line 51, ../sass/partials/_skeleton.scss */
 .row,
 .clearfix {
   zoom: 1;
 }
 
-/* line 58, ../sass/partials/_skeleton.scss */
+/* line 55, ../sass/partials/_skeleton.scss */
 .clear {
   clear: both;
   display: block;
@@ -1659,7 +1468,7 @@ h6 {
   height: 0;
 }
 
-/* line 67, ../sass/partials/_skeleton.scss */
+/* line 64, ../sass/partials/_skeleton.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
