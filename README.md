@@ -3,7 +3,7 @@ Skeleton-UI
 
 A Sass-powered UI for the Skeleton Responsive Framework
 
-Demo: http://simplethemes.github.com/skeleton-ui/ (alpha)
+Demo: http://simplethemes.github.com/skeleton-ui/demo/ (alpha)
 
 Skeleton Framework: https://github.com/dhgamache/Skeleton
 
