@@ -1,8 +1,7 @@
-@import "compass";
 
 // Brand Colors
 $brand: #4E83FB;
-$brand-alt: #EE9525;
+$brand-alt: darken($brand,20%);
 
 // The base font size.
 $base-font-size: 16px; // Override default set in Compass' Vertical Rhythm partial.
@@ -16,8 +15,8 @@ $base-font-family: Sans-Serif;
 $heading-font-family: Sans-Serif;
 
 // Links
-$link-color: #4E83FB;
-$link-hover-color: #4E83FB;
+$link-color: $brand;
+$link-hover-color: $brand-alt;
 
 // Heading Fonts
 $h1-color: #000;

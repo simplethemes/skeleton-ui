@@ -1,7 +1,10 @@
 
-//  Base Settings
-	@import "variables";
-	@import "mixins";
+// Base Settings
+@import "variables";
+// Use Compass
+@import "compass";
+// Mixins
+@import "mixins";
 
 /* @group Normalize */
 
