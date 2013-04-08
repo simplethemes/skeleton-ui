@@ -35,6 +35,24 @@
   width: 100%;
 }
 
+.horizontal-form p {
+  margin: 0 0 20px 0;
+}
+.horizontal-form label {
+ width: 100%;
+ display: block;
+}
+
+.split-form p {
+  margin: 0 0 20px 0;
+}
+.vertical-form label,
+.split-form label {
+ display: inline;
+ float: left;
+ margin: 0 10px 0 0;
+}
+
 // Added via JS to <textarea> and class="input-full".
 // Applies only to IE7. Other browsers don't need it.
 
