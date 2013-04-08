@@ -229,6 +229,9 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	margin-top: 0;
 	line-height: $base-line-height;
 }
+.outset a,.inset a {
+	text-shadow:none;
+}
 
 span.c {
   font-family: monospace, serif;
