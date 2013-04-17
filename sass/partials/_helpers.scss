@@ -235,25 +235,25 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 
 
 .callout {
-	width: 100%;
+	font-family: Sans-Serif;
 	margin: 20px auto;
 	padding: 10px 0px;
 	border: 4px solid;
-	@include border-radius(8px);
-	font-family: Sans-Serif;
-	font-size: 14px;
+	line-height: 1.1;
+	@include box-shadow (0px 1px 1px #ffffff);
+  	@include border-radius (8px);
 	background: url(../img/icons/underlay.png) repeat-x center top;
 }
 .callout h4 {
 	font-family: Sans-Serif;
-	font-size: 20px;
+	font-size: 1em;
 	line-height: 1;
 	font-weight: bold;
 	margin: 0px 10px;
 	padding: 0px 0px 2px 20px;
 }
 .callout p {
-	margin: 5px 10px 5px 10px;
+	margin: 10px 10px 5px 10px;
 }
 .callout strong {
 	color: inherit;
@@ -263,14 +263,11 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	color: #fff;
 	border-color: #b60000;
 	background-color: #c20000;
-	text-shadow: 1px 1px 0 #900000;
-	-moz-box-shadow: 0 1px 1px #ffffff;
-	-webkit-box-shadow: 0 1px 1px #ffffff;
-	box-shadow: 0 1px 1px #ffffff;
+  	@include single-text-shadow(1px, 1px, 0, #900000);
 }
 .callout.alert h4 {
 	color: #fff;
-	background: url(../img/icons/icon-alert.png) no-repeat 0px 2px;
+	background: url(../img/icons/icon-alert.png) no-repeat left center;
 }
 
 
@@ -278,14 +275,11 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	color: #976619;
 	border-color: #eed971;
 	background-color: #f5de6d;
-	text-shadow: #ffeda0 1px 1px 0;
-	-moz-box-shadow: 0 1px 1px #ffffff;
-	-webkit-box-shadow: 0 1px 1px #ffffff;
-	box-shadow: 0 1px 1px #ffffff;
+  	@include single-text-shadow(1px, 1px, 0, #ffeda0);
 }
 .callout.warn h4 {
 	color: #976619;
-	background: url(../img/icons/icon-warn.png) no-repeat 0px 2px;
+	background: url(../img/icons/icon-warn.png) no-repeat left center;
 }
 
 
@@ -293,14 +287,11 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	color: #4d657f;
 	border-color: #bbcddf;
 	background-color: #c4d7eb;
-	text-shadow: #d4e1ef 1px 1px 0;
-	-moz-box-shadow: 0 1px 1px #ffffff;
-	-webkit-box-shadow: 0 1px 1px #ffffff;
-	box-shadow: 0 1px 1px #ffffff;
+  	@include single-text-shadow(1px, 1px, 0, #d4e1ef);
 }
 .callout.info h4 {
 	color: #4e81b3;
-	background: url(../img/icons/icon-info.png) no-repeat 0px 2px;
+	background: url(../img/icons/icon-info.png) no-repeat left center;
 }
 
 
@@ -309,14 +300,11 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	color: #64783b;
 	border-color: #b8d593;
 	background-color: #bfdf97;
-	text-shadow: #d3e5bd 1px 1px 0;
-	-moz-box-shadow: 0 1px 1px #ffffff;
-	-webkit-box-shadow: 0 1px 1px #ffffff;
-	box-shadow: 0 1px 1px #ffffff;
+  	@include single-text-shadow(1px, 1px, 0, #d3e5bd);
 }
 .callout.success h4 {
 	color: #618731;
-	background: url(../img/icons/icon-success.png) no-repeat 0px center;
+	background: url(../img/icons/icon-success.png) no-repeat left center;
 }
 
 
