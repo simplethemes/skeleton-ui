@@ -233,7 +233,7 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	text-shadow:none;
 }
 
-
+$color: #EEEEEE;
 .callout {
 	font-family: Sans-Serif;
 	margin: 20px auto;
@@ -242,15 +242,19 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	line-height: 1.1;
 	@include box-shadow (0px 1px 1px #ffffff);
   	@include border-radius (8px);
-	background: url(../img/icons/underlay.png) repeat-x center top;
+	// background: url(../img/icons/underlay.png) repeat-x center top;
+	color: darken($color, 60%);
+	border-color: darken($color, 10%);
+	text-shadow: 1px 1px 0px lighten($color,5%);
+  	@include background(linear-gradient(top, $color, darken($color,7%)));
 }
 .callout h4 {
 	font-family: Sans-Serif;
 	font-size: 1em;
-	line-height: 1;
+	line-height: 100%;
 	font-weight: bold;
 	margin: 0px 10px;
-	padding: 0px 0px 2px 20px;
+	color: darken($color, 60%);
 }
 .callout p {
 	margin: 10px 10px 5px 10px;
@@ -258,53 +262,104 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 .callout strong {
 	color: inherit;
 }
+.callout a {
+	text-shadow:none;
+}
 
+$color : #dc0909;
 .callout.alert {
 	color: #fff;
-	border-color: #b60000;
-	background-color: #c20000;
-  	@include single-text-shadow(1px, 1px, 0, #900000);
+	border-color: shade($color, 5%);
+	text-shadow: 1px 1px 0px shade($color,20%);
+  	@include background(linear-gradient(top, $color, darken($color,7%)));
 }
 .callout.alert h4 {
 	color: #fff;
 	background: url(../img/icons/icon-alert.png) no-repeat left center;
+	padding: 2px 0px 2px 20px;
+}
+.callout.alert a {
+	color: #fff;
+}
+.callout.alert .btn {
+  @include simple-button(0, 92%, 35%, lighten($color,60%));
+  @include box-shadow (inset 0 1px 0 0 tint($color,30%),0 1px 1px 0 tint($color,10%))
 }
 
 
+
+$color : #eed971;
 .callout.warn {
-	color: #976619;
-	border-color: #eed971;
-	background-color: #f5de6d;
-  	@include single-text-shadow(1px, 1px, 0, #ffeda0);
+	color: saturate(shade($color, 65%),50%);
+	border-color: shade($color, 5%);
+	text-shadow: 1px 1px 0px lighten($color,15%);
+  	@include background(linear-gradient(top, $color, darken($color,7%)));
 }
 .callout.warn h4 {
-	color: #976619;
+	color: saturate(shade($color, 65%),50%);
 	background: url(../img/icons/icon-warn.png) no-repeat left center;
+	padding: 2px 0px 2px 20px;
+}
+.callout.warn a {
+	color: saturate(shade($color, 70%),60%);
+}
+
+.callout.warn .btn {
+  // #EC8B20
+  // hsl(31, 84%, 53%)
+  @include simple-button(31, 84%, 53%, lighten(#EC8B20,50%));
+  @include box-shadow (inset 0 1px 0 0 tint(#EC8B20,20%),0 1px 1px 0 tint(#EC8B20,75%));
 }
 
 
+$color : #c4d7eb;
 .callout.info {
-	color: #4d657f;
-	border-color: #bbcddf;
-	background-color: #c4d7eb;
-  	@include single-text-shadow(1px, 1px, 0, #d4e1ef);
+	color: saturate(shade($color, 50%),25%);
+	border-color: saturate(shade($color, 12%),10%);
+	text-shadow: 1px 1px 0px lighten($color,5%);
+  	@include background(linear-gradient(top, $color, darken($color,7%)));
 }
 .callout.info h4 {
-	color: #4e81b3;
+	color: saturate(shade($color, 50%),25%);
 	background: url(../img/icons/icon-info.png) no-repeat left center;
+	padding: 2px 0px 2px 20px;
+}
+.callout.info a {
+	color: saturate(shade($color, 60%),45%);
 }
 
+.callout.info .btn {
+  @include simple-button(210, 40%, 50%, lighten(#4E81B3,50%));
+  @include box-shadow (inset 0 1px 0 0 tint(#4E81B3,20%),0 1px 1px 0 tint(#4E81B3,75%));
+}
 
-
+$color : #bfdf97;
 .callout.success {
-	color: #64783b;
-	border-color: #b8d593;
-	background-color: #bfdf97;
-  	@include single-text-shadow(1px, 1px, 0, #d3e5bd);
+	color: saturate(shade($color, 60%),25%);
+	border-color: saturate(shade($color, 12%),10%);
+	text-shadow: 1px 1px 0px lighten($color,5%);
+  	@include background(linear-gradient(top, $color, darken($color,7%)));
 }
 .callout.success h4 {
-	color: #618731;
+	color: saturate(shade($color, 60%),25%);
 	background: url(../img/icons/icon-success.png) no-repeat left center;
+	padding: 2px 0px 2px 20px;
+}
+
+.callout.success a {
+	color: saturate(shade($color, 70%),50%);
+}
+
+.callout.success .btn {
+  // #B8D593
+  // hsl(86, 44%, 71%)
+  @include simple-button(87, 47%, 36%, lighten(#B8D593,15%));
+  @include box-shadow (inset 0 1px 0 0 shade(#B8D593,20%),0 1px 1px 0 tint(#B8D593,15%));
+}
+
+
+.callout .btn {
+  margin:0px 20px 20px 20px !important;
 }
 
 
