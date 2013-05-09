@@ -1,83 +1,191 @@
+/* hide toggler by default  */
+
+a#shownav {
+	display: none;
+}
+
+/* position menu to right of container */
+
 #nav ul {
 	float: right;
 }
 
-#nav ul,#nav ul li {
+/* basic resets */
+
+#nav ul,
+#nav ul li {
 	margin: 0;
 	padding: 0;
 	list-style: none;
 }
+
+/* make horiz list */
+
 #nav ul li {
 	float: left;
 	padding: 4px 18px 0px 0px;
 }
+
+/* default link styles */
+
 #nav ul li a {
 	font-size: 14px;
-	display: block;
 	color: hsl(0, 0%, 60%);
-	text-decoration:none;
 	text-shadow: 1px 1px 0px #000;
-	&:hover {
-		color: $brand;
-	}
+	text-decoration:none;
+	display: block;
 }
 
-#nav ul li.active a  {
+
+#nav ul li a:hover,
+#nav ul li:hover a {
 	color: $brand;
 }
 
-a#shownav {
-	display: none;
+/* active links */
+
+#nav ul li.selected a  {
+	color: #fff;
 }
+
+/* exclude active subs from above rule */
+
+#nav ul li.selected li a  {
+	color: inherit;
+}
+
+/* dropdown essentials */
+
+#nav ul ul {
+	position: absolute;
+	width: 200px;
+	display: none; /* hide by default */
+}
+
+#nav ul ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+
+#nav ul li:hover > ul {
+	display: block; /* show dropdown on hover */
+}
+
+#nav ul li li:hover ul,
+#nav ul li li.sfHover ul {
+	left: 200px; /* match ul width */
+	top:0;
+}
+
+/* dropdown styles */
+
+#nav ul ul {
+	border-bottom: 1px solid #333;
+	z-index: 999;
+}
+
+#nav ul ul li a,
+#nav ul li:hover li a {
+	color: #fff;
+	background: #000;
+	border: 1px solid #333;
+	border-bottom: none;
+	padding: 6px 2px 6px 8px;
+	line-height: 100%;
+}
+
+
+#nav ul ul li a:hover {
+	color: $brand;
+	background: #222;
+}
+
+/* Mobile Menu Styles */
 
 @media only screen and (max-width: 767px) {
 
+	/* ensure the logo extends across */
+	h1#logo {width: 100%;display: block;}
 
-#nav ul {
-	float: none;
+	/* show the toggler */
+	a#shownav {
+		display: block;
+		float: right;
+		text-indent: -9999em;
+		width: 40px;
+		height: 40px;
+		position: absolute;
+		right: 0;
+		background: url(../img/icons/shownav.png) no-repeat 0 0;
+	}
+
+	/* hide menu - let js show on toggle */
+	#nav {
+		display: none;
+		float: left;
+		width: 100%;
+	}
+
+	#nav ul {
+		float: left;
+		width: 100%;
+		margin-top:10px;
+	}
+
+	#nav ul li {
+		float: none;
+		margin:0;
+		padding:0 0 1px 0;
+		line-height: 28px;
+	}
+
+	#nav ul.sf-menu ul {
+		position: relative;
+		margin: 0px 0px 0px 10px;
+		padding: 0;
+		background: none;
+		border: none;
+		width: 100%;
+
+	}
+
+	/* top-level styles */
+
+	#nav ul li a,
+	#nav ul li a:hover {
+	}
+
+	#nav ul li.selected a,
+	#nav ul li.selected a:hover {
+	}
+
+	/* dropdown styles */
+
+	#nav ul ul li a,
+	#nav ul ul li a:hover,
+	#nav ul li:hover li a {
+		font-size: 12px;
+		padding: 6px 0px;
+		border: none;
+		display: block;
+		background: none;
+		color: $brand;
+	}
+	#nav ul ul li a:hover,
+	#nav ul li:hover li a {
+		color: #ccc;
+	}
+	#nav ul li:hover li a:hover {
+		color: #fff;
+	}
+
 }
 
-h1#logo {
-	width: 100%;
-	display: block;
-}
-
-a#shownav {
-	display: block;
-	float: right;
-	text-indent: -9999em;
-	width: 40px;
-	height: 40px;
-	position: absolute;
-	right: 0;
-	background: url(../img/icons/shownav.png) no-repeat 0 0;
-}
-
-#nav {
-	display: none;
-	float: left;
-	width: 100%
-}
-
-#nav ul {
-	margin-top:20px;
-}
-
-#nav ul li {
-	float: none;
-	margin:0;
-	padding:0 0 1px 0;
-	line-height: 28px;
-}
-
-
-}
 
 @media screen and (min-width: 767px) {
-
-/* ensure #nav is visible on desktop version */
-#nav {
-	display: block !important;
-}
-
+	/* ensure #nav is visible on desktop version after resize */
+	#nav {
+		display: block !important;
+	}
 }
