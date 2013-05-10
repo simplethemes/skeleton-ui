@@ -78,6 +78,13 @@ a#shownav {
 	top:0;
 }
 
+/* dropdown indicator */
+
+#nav ul li a.sf-with-ul {
+	background: url(../img/nav-arrow.png) no-repeat right center;
+	padding-right: 10px;
+}
+
 /* dropdown styles */
 
 #nav ul ul {
@@ -94,7 +101,6 @@ a#shownav {
 	padding: 6px 2px 6px 8px;
 	line-height: 100%;
 }
-
 
 #nav ul ul li a:hover {
 	color: $brand;
@@ -158,6 +164,11 @@ a#shownav {
 
 	#nav ul li.selected a,
 	#nav ul li.selected a:hover {
+	}
+
+	#nav ul li a.sf-with-ul {
+		background-image: none;
+		padding-right: 0;
 	}
 
 	/* dropdown styles */

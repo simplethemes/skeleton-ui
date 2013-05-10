@@ -1,12 +1,22 @@
 function positionFooter() {
-	var StickyFooter = $("#footer");
-	if ((( $(document.body).height() + StickyFooter.outerHeight()) < $ (window).height() && StickyFooter.css("position") === "fixed") || ($(document.body).height() < $(window).height() && StickyFooter.css("position") !== "fixed")) {
-		StickyFooter.css({ position: "fixed", bottom: "0px" }); }
-	else {
-		StickyFooter.css({ position: "static" }); }
-	}
+  var StickyFooter = $("#footer");
+  if ((( $(document.body).height() + StickyFooter.outerHeight()) < $ (window).height() && StickyFooter.css("position") === "fixed") || ($(document.body).height() < $(window).height() && StickyFooter.css("position") !== "fixed")) {
+    StickyFooter.css({ position: "fixed", bottom: "0px" }); }
+  else {
+    StickyFooter.css({ position: "static" }); }
+  }
 
 jQuery(document).ready(function($){
+
+    $('#nav ul').superfish({
+      delay: 800,
+      cssArrows: false,
+      animation:   {opacity:'show',height:'show'},
+      animationOut: {height:'hide'},
+      speed: 'fast',
+      speedOut: 'fast'
+    });
+
 
     /* prepend menu icon */
     $('#nav-wrap').prepend('<a href="#" id="shownav">Menu</a>');
@@ -19,9 +29,9 @@ jQuery(document).ready(function($){
         e.preventDefault();
     });
     // Sticky Footer
-	positionFooter(); $(window).scroll(positionFooter);
-	$(window).resize(positionFooter);
-	$(window).load(positionFooter);
+  positionFooter(); $(window).scroll(positionFooter);
+  $(window).resize(positionFooter);
+  $(window).load(positionFooter);
 
     // Open rel="external" in new window
     $('a[rel="external"]').click( function() {
@@ -66,10 +76,4 @@ jQuery(document).ready(function($){
         e.preventDefault();
       });
     });
-
-
 });
-
-
-
-
