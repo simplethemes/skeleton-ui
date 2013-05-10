@@ -223,6 +223,21 @@ $columns: 16;
 // allows the text color to be customized
 $color: hsl(0, 0, 100%) !default;
 
+
+
+@mixin skeleton-linear-gradient($start-gradient, $stop-gradient) {
+    background: $stop-gradient;
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-gradient), color-stop(100%,$stop-gradient));
+    background: -webkit-linear-gradient(top, $start-gradient 0%,$stop-gradient 100%);
+    background: -o-linear-gradient(top, $start-gradient 0%,$stop-gradient 100%);
+    background: -ms-linear-gradient(top, $start-gradient 0%,$stop-gradient 100%);
+    background: linear-gradient(top bottom, $start-gradient 0%,$stop-gradient 100%);
+    background-clip: border-box;
+    -pie-background: linear-gradient(top, $start-gradient, $stop-gradient);
+    behavior: $pie-behavior;
+    position: relative;
+}
+
 @mixin simple-button ($base-hue, $base-saturation, $base-lightness, $color) {
 
   $start-gradient: tint(hsl($base-hue, $base-saturation, $base-lightness), 10%);
@@ -261,13 +276,10 @@ $color: hsl(0, 0, 100%) !default;
   vertical-align: middle;
   border: 1px solid $border;
   @include single-text-shadow($text-shadow-h-offset, $text-shadow-v-offset, $text-shadow-blur, $color: $text-shadow);
-  @include border-radius (3px);
+  @include border-radius (4px);
   @include box-shadow (inset 0 1px 0 0 $inset-shadow,0 1px 1px 0 #fff);
-  @include background(linear-gradient(top, $start-gradient, $stop-gradient));
-  @include filter-gradient($start-gradient, $stop-gradient, top);
+  @include skeleton-linear-gradient($start-gradient, $stop-gradient);
   background-repeat: repeat-x;
-  behavior: url('/css/PIE.php');
-  position: relative;
   &:hover {
     $border: scale-saturation(darken(hsl($base-hue, $base-saturation, $base-lightness), 5%), 15%);
     $inset-shadow: scale-saturation(lighten(hsl($base-hue, $base-saturation, $base-lightness), 5%), -7%);
@@ -283,7 +295,7 @@ $color: hsl(0, 0, 100%) !default;
       $text-shadow-v-offset: 1px;
     }
     border: 1px solid $border;
-    @include background(linear-gradient(top, $start-gradient, $stop-gradient));
+    @include skeleton-linear-gradient($start-gradient, $stop-gradient);
     @include box-shadow (inset 0 1px 0 0 $inset-shadow);
     cursor: pointer;
   }

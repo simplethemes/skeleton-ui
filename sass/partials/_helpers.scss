@@ -210,6 +210,8 @@ img.pull-right {margin: 0px 0px 0px 10px;}
   	@include single-text-shadow(1px, 1px, 0, $color: lighten($inset-color,5%));
 	padding: 20px;
 	margin-top: $base-line-height;
+  	behavior: $pie-behavior;
+  	position: relative;
 }
 
 .outset {
@@ -221,7 +223,8 @@ img.pull-right {margin: 0px 0px 0px 10px;}
 	@include box-shadow (inset 1px 1px 0 lighten($outset-color,10%),inset -1px -1px 0 lighten($outset-color,5%));
 	padding: 20px;
 	margin-top: $base-line-height;
-	position: relative;
+  	behavior: $pie-behavior;
+  	position: relative;
 }
 .inset h1,.outset h1,
 .inset h2,.outset h2,
@@ -246,7 +249,7 @@ $color: #EEEEEE;
 	color: darken($color, 60%);
 	border-color: darken($color, 10%);
 	text-shadow: 1px 1px 0px lighten($color,5%);
-  	@include background(linear-gradient(top, $color, darken($color,7%)));
+  	@include skeleton-linear-gradient($color, darken($color,7%));
 }
 .callout h4 {
 	font-family: Sans-Serif;
@@ -271,7 +274,7 @@ $color : #dc0909;
 	color: #fff;
 	border-color: shade($color, 5%);
 	text-shadow: 1px 1px 0px shade($color,20%);
-  	@include background(linear-gradient(top, $color, darken($color,7%)));
+  	@include skeleton-linear-gradient($color, darken($color,7%));
 }
 .callout.alert h4 {
 	color: #fff;
@@ -293,7 +296,7 @@ $color : #eed971;
 	color: saturate(shade($color, 65%),50%);
 	border-color: shade($color, 5%);
 	text-shadow: 1px 1px 0px lighten($color,15%);
-  	@include background(linear-gradient(top, $color, darken($color,7%)));
+  	@include skeleton-linear-gradient($color, darken($color,7%));
 }
 .callout.warn h4 {
 	color: saturate(shade($color, 65%),50%);
@@ -317,7 +320,7 @@ $color : #c4d7eb;
 	color: saturate(shade($color, 50%),25%);
 	border-color: saturate(shade($color, 12%),10%);
 	text-shadow: 1px 1px 0px lighten($color,5%);
-  	@include background(linear-gradient(top, $color, darken($color,7%)));
+  	@include skeleton-linear-gradient($color, darken($color,7%));
 }
 .callout.info h4 {
 	color: saturate(shade($color, 50%),25%);
@@ -338,7 +341,7 @@ $color : #bfdf97;
 	color: saturate(shade($color, 60%),25%);
 	border-color: saturate(shade($color, 12%),10%);
 	text-shadow: 1px 1px 0px lighten($color,5%);
-  	@include background(linear-gradient(top, $color, darken($color,7%)));
+  	@include skeleton-linear-gradient($color, darken($color,7%));
 }
 .callout.success h4 {
 	color: saturate(shade($color, 60%),25%);
@@ -362,8 +365,6 @@ $color : #bfdf97;
   margin:0px 20px 20px 20px !important;
 }
 
-
-
 span.c {
   font-family: monospace, serif;
   color: #4E83FB;
@@ -383,6 +384,3 @@ span.c {
 .fade,a.fade:link,a.fade:hover,a.fade:visited,a.fade:active,a.fade:focus {
   @include transition(color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear);
 }
-
-
-
