@@ -1,8 +1,15 @@
 <ul class="sf-menu">
     <li><a href="index.html"></a></li>
-    <li{% if this.permalink == 'typography.html' %} class="active"{% endif %}><a href="typography.html">Typography</a></li>
-    <li{% if this.permalink == 'buttons.html' %} class="active"{% endif %}><a href="buttons.html">Buttons</a></li>
-    <li{% if this.permalink == 'grid.html' %} class="active"{% endif %}><a href="grid.html">Grid</a></li>
+    <li{% if this.permalink == 'utils.html' %} class="active"{% endif %}><a href="utils.html">Utilities</a>
+    <ul>
+    <li><a href="grid.html">Grid</a></li>
+    <li><a href="buttons.html">Buttons</a></li>
+    <li><a href="typography.html">Type</a></li>
+    <li><a href="callouts.html">Callouts</a></li>
+    <li><a href="tabs.html">Tabs</a></li>
+    <li><a href="forms.html">Forms</a></li>
+    </ul>
+    </li>
     <li{% if this.permalink == 'docs.html' %} class="active"{% endif %}><a href="docs.html">Documentation</a>
     <ul>
     <li><a href="https://github.com/simplethemes/skeleton-ui">Github Repo</a></li>
