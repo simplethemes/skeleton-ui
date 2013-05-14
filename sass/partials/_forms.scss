@@ -1,5 +1,4 @@
-// `Widths
-//----------------------------------------------------------------------------------------------------
+// Widths
 
 .input_tiny {
   width: 50px;
@@ -29,10 +28,12 @@
   width: 100%;
 }
 
-.horizontal-form p {
+// Form Layouts
+
+.split-form p {
   margin: 0 0 20px 0;
 }
-.horizontal-form label {
+.split-form label {
  width: 100%;
  display: block;
 }
@@ -45,6 +46,17 @@
  display: inline;
  float: left;
  margin: 0 10px 0 0;
+ line-height: 1.25;
+ font-size: 13px;
+}
+
+.split-form.split50 label {
+  width: 30%;
+}
+.split-form.split50 p {
+}
+.split-form.split50 input {
+  width: 40%;
 }
 
 // Added via JS to <textarea> and class="input-full".
@@ -55,8 +67,7 @@
   padding-right: 8px;
 }
 
-// `UI Consistency
-//----------------------------------------------------------------------------------------------------
+// UI Consistency
 
 input[type="search"]::-webkit-search-decoration {
   display: none;
